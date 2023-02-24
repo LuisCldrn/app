@@ -1,0 +1,36 @@
+*{
+    background-color: rgb(54, 49, 49);
+
+}
+
+.nav-link::before, .nav-link {
+    content: "// ";
+    color: rgb(71, 173, 71);
+}
+.nav-link::after, .nav-link {
+    content: ";";
+    color: rgb(71, 173, 71);
+}
+
+.active-link::before, .active-link{
+    content: "";
+    color: rgb(0, 170, 212);
+    font-weight: 500;
+}
+
+.active-link span {
+    color: rgb(255, 62, 223);
+}
+
+.active-link::after{
+    content: ";";
+    color: rgb(255, 255, 255);
+}
+.logo::before, .logo::after {
+    content: "";
+}
+
+.logo {
+    font-size: 1.2rem;
+    color: white;
+}
