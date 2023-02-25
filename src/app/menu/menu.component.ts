@@ -1,23 +1,39 @@
-import { Component } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ScrollService } from '../service/scroll.service';
 
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.css']
 })
-export class MenuComponent {
+export class MenuComponent implements OnInit{
+
+  public screenHeight: number = 0;
+
 
   constructor(
-    private router: Router
+
+    private router: Router,
+    public ScrollService: ScrollService, 
+    private scroller: ViewportScroller
   ) {
 
   }
 
-  private isHomeActive = this.router.url.startsWith('/home');
-  homeClasses = {
-    "active": this.isHomeActive,
-    "nav-link": true
+  isActiveTab() {
+    console.log(this.scroller.getScrollPosition()[1]);
+    console.log(this.screenHeight)
+  }
+
+  ngOnInit(): void {
+      this.screenHeight = window.innerHeight;
   }
   
+  @HostListener('window:resize', ['$event'])
+  onResize() {
+    this.screenHeight = window.innerHeight;
+  }
+
 }

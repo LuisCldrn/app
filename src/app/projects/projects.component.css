@@ -1,0 +1,42 @@
+.projects {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(44, 44, 44);
+}
+
+h1 {
+    display: flex;
+    color: white;
+    justify-content: center;
+    padding: 10vh 1vh;
+}
+
+.lang-icons {
+    display: grid;
+    grid-template-areas: "1 1 1 1" "1 1 1 1";
+    list-style: none;
+    gap: 5vw;
+    text-align: center;
+    color: rgb(187, 187, 187);
+}
+
+.examp {
+    color: white;
+}
+
+ul img{
+    width: 5vw;
+}
+
+.languages {
+    display: grid;
+    grid-template-areas:  "1 1";
+    gap: 5vw;
+}
+
+.txt {
+    width: 30vw;
+    color: white;
+}

@@ -1,11 +1,24 @@
-<div class="main">
-    <div >
-        <a ><img src="https://i.imgur.com/ulqDrP0.jpg" title="source: imgur.com" height="1000" /></a>
+<div class="main1" id="Home">
+    <div class="main">
+        
+        <div class="container landing-text">
+            <h3>FRONT-END</h3>
+            <h1>SOFTWARE DEVELOPER</h1>
+            <h4>HELLO WORLD!</h4>
+            <h4>I AM LUIS CALDERON</h4>
+        </div>
     </div>
-    <div class="aboutMe">
-        <h5>Front end Developer</h5>
-        <h1>Luis Calderon</h1>
+    <div class="mouse_scroll" (click)="ScrollService.goTo('aboutMe')">
+
+		<div class="mouse">
+			<div class="wheel"></div>
+		</div>
+		<div>
+			<span class="m_scroll_arrows unu"></span>
+			<span class="m_scroll_arrows doi"></span>
+			<span class="m_scroll_arrows trei"></span>
+		</div>
     </div>
+    <app-aboutme id="aboutMe"></app-aboutme>
 </div>
-<a id="test" ></a>
-<app-aboutme></app-aboutme>
+<app-projects id="projects" ></app-projects>

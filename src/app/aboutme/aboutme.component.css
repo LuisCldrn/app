@@ -1,0 +1,12 @@
+.aboutMe {
+    display: grid;
+    place-items: center;
+    padding: 15vw 15vh;
+    gap: 3vh;
+    color: white;
+}
+
+h3 {
+    font-size: 1.5rem;
+    width: 70vw;
+}
