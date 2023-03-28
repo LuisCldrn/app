@@ -7,8 +7,6 @@ import { Router } from '@angular/router';
 })
 export class ScrollService {
 
-  location = ''
-
   constructor(
     private router: Router, 
     private scroller: ViewportScroller
@@ -16,7 +14,6 @@ export class ScrollService {
 
   goTo(location: string) {
     this.scroller.scrollToAnchor(location);
-    console.log(this.scroller.getScrollPosition())
   }  
 
 

@@ -1,5 +1,5 @@
 .projects {
-    height: 100vh;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,7 +26,7 @@ h1 {
     color: white;
 }
 
-ul img{
+ul img {
     width: 5vw;
 }
 
@@ -39,4 +39,67 @@ ul img{
 .txt {
     width: 30vw;
     color: white;
+}
+
+.project {
+    background-color: rgb(44, 44, 44);
+    display: grid;
+    grid-template-areas: "1 1";
+    gap: 1vw;
+    padding: 3vh;
+}
+
+.project img {
+    width: 49vw;
+}
+
+.lang_used img {
+    width: 3vw;
+}
+
+.lang_used {
+    display: grid;
+    grid-template-areas: "1 1 1 1";
+    list-style: none;
+    justify-content: center;
+    gap: 2vw;
+    text-align: center;
+    color: rgb(187, 187, 187);
+}
+
+.project p {
+    color: white;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    text-align: center;
+    gap: 3vh;   
+}
+
+.info h1 {
+    padding: 3vh 0 0 0;
+}
+
+.info button {
+    width: 8vw;
+    background-color: rgb(211, 114, 35);
+}
+
+.info a {
+    color: white;
+    text-decoration: none;
+}
+
+.imgs img {
+    filter: grayscale(0.5);
+}
+
+.imgs img:hover {
+    filter: none;
+    cursor: pointer;
 }
