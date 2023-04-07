@@ -1,20 +1,39 @@
 <header>
   <nav class="navbar">
-    <a class="navbar-brand">Luis Calderon</a>
-    <ul class="nav " >
-      <li class="nav-item">
-        <a class="nav-link" (click)="ScrollService.goTo('Home')">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" (click)="ScrollService.goTo('aboutMe')" >About Me</a>
-      </li >
-      <li class="nav-item">
-        <a class="nav-link" (click)="ScrollService.goTo('projects')">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link">Conctact Me</a>
-      </li>
-    </ul>
-    <button class="btn "><a href="assets\i-765 copy.pdf" download="i-765 copy.pdf">Resume/CV</a></button>
+    <div class="navbar_container">
+      <a class="navbar-brand"><img src="/assets/2.png" alt=""></a>
+      <div
+        class="navbar__toggle"
+        id="mobile-menu"
+        ngClass="{{ mobileM }}"
+        (click)="mobile()"
+      >
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav" class="navbar_menu" ngClass="{{ mobileMenu }}">
+        <li class="nav-item" class="navbar__item" (click)="mobile()">
+          <a class="nav-link" (click)="ScrollService.goTo('Home')">Home</a>
+        </li>
+        <li class="nav-item" class="navbar__item" (click)="mobile()">
+          <a class="nav-link" (click)="ScrollService.goTo('aboutMe')"
+            >About Me</a
+          >
+        </li>
+        <li class="nav-item" class="navbar__item" (click)="mobile()">
+          <a class="nav-link" (click)="ScrollService.goTo('projects')"
+            >Projects</a
+          >
+        </li>
+        <li class="nav-item" class="navbar__item" (click)="mobile()">
+          <a class="nav-link">Conctact Me</a>
+        </li>
+        <button class="btn" id="resume_btn" >
+          <a href="assets\i-765 copy.pdf" download="i-765 copy.pdf" >Resume/CV</a>
+        </button>
+      </ul>
+      
+    </div>
   </nav>
 </header>

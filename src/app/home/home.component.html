@@ -1,24 +1,41 @@
 <div class="main1" id="Home">
-    <div class="main">
-        
-        <div class="container landing-text">
-            <h3>FULL STACK</h3>
-            <h1>{{role}}</h1>
-            <h4>HELLO WORLD!</h4>
-            <h4>I AM LUIS CALDERON</h4>
-        </div>
-    </div>
-    <div class="mouse_scroll" (click)="ScrollService.goTo('aboutMe')">
+  <div class="main">
+    <div class="container landing-text">
+      <h3>FULL STACK</h3>
+      <div class="autotype">
+        <ngx-typed-js
+          class="autotype"
+          [typeSpeed]="100"
+          [backSpeed]="60"
+          [showCursor]="false"
+          [loop]="true"
+          [bindInputFocusEvents]="true"
+          [shuffle]="true"
+          [strings]="[
+            'FULL STACK DEVELOPER',
+            'SOFTWARE DEVELOPER',
+            'JAVA DEVELOPER',
+            'FRONT-END DEVELOPER',
+          ]"
+        >
+          <h1 class="typing"></h1></ngx-typed-js
+        ><span>|</span>
+      </div>
 
-		<div class="mouse">
-			<div class="wheel"></div>
-		</div>
-		<div>
-			<span class="m_scroll_arrows unu"></span>
-			<span class="m_scroll_arrows doi"></span>
-			<span class="m_scroll_arrows trei"></span>
-		</div>
+      <h4>HELLO WORLD!</h4>
+      <h4>I AM LUIS CALDERON</h4>
     </div>
-    <app-aboutme id="aboutMe"></app-aboutme>
+  </div>
+  <div class="mouse_scroll" (click)="ScrollService.goTo('aboutMe')">
+    <div class="mouse">
+      <div class="wheel"></div>
+    </div>
+    <div>
+      <span class="m_scroll_arrows unu"></span>
+      <span class="m_scroll_arrows doi"></span>
+      <span class="m_scroll_arrows trei"></span>
+    </div>
+  </div>
+  <app-aboutme id="aboutMe"></app-aboutme>
 </div>
-<app-projects id="projects" ></app-projects>
+<app-projects id="projects"></app-projects>

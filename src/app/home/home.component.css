@@ -20,7 +20,15 @@
     margin: 0;
 }
 
+.autotype {
+  display: flex;
+  align-items: center;
+}
 
+.autotype span {
+  font-size:  4rem;
+  margin-bottom: 8px;
+}
 
 .container {
  display: flex;
@@ -208,3 +216,19 @@ body {
   100% { opacity: 1; }
 }
 
+@media only screen and (max-width: 960px) {
+  .autotype span {
+    display: none;
+  }
+
+  .container {
+    margin: 15px;
+  }
+
+  .main1 {
+    background-image: linear-gradient( rgba(255, 255, 255, 0.205) 70%, rgb(44, 44, 44) 95%), url(https://i.imgur.com/gfQMogO.jpg);
+    background-size: 100vw 175vh;
+    height: 175vh;
+}
+
+}

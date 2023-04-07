@@ -12,7 +12,9 @@ export class MenuComponent implements OnInit{
 
   public screenHeight: number = 0;
 
-
+  mobileM: string = ''
+  mobileMenu: string = ''
+  
   constructor(
 
     private router: Router,
@@ -34,6 +36,17 @@ export class MenuComponent implements OnInit{
   @HostListener('window:resize', ['$event'])
   onResize() {
     this.screenHeight = window.innerHeight;
+  }
+
+  mobile() {
+    if(this.mobileM === ''){
+      this.mobileM = 'is-active'
+      this.mobileMenu = 'active1'
+  }
+    else {
+      this.mobileM = ''
+      this.mobileMenu = ''
+    }
   }
 
 }

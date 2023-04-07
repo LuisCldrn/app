@@ -43,10 +43,17 @@ ul img {
 
 .project {
     background-color: rgb(44, 44, 44);
-    display: grid;
-    grid-template-areas: "1 1";
+    display: flex;
+    flex-direction: row;
     gap: 1vw;
     padding: 3vh;
+    height: auto;
+    padding-bottom: 15vh;
+    align-items: center;
+}
+
+.project:nth-child(odd) {
+    flex-direction: row-reverse;
 }
 
 .project img {
@@ -65,6 +72,11 @@ ul img {
     gap: 2vw;
     text-align: center;
     color: rgb(187, 187, 187);
+}
+
+.ecom {
+    grid-template-areas: "1 1 1";
+    gap: 2vw 5vw;
 }
 
 .project p {
@@ -102,4 +114,56 @@ ul img {
 .imgs img:hover {
     filter: none;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 960px) {
+    .languages {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project,.project:nth-child(odd) {
+        flex-direction: column-reverse;
+    }
+
+    .info, .imgs , .imgs img, .txt {
+        width: 85vw;
+        font-size: 2vh;
+    }
+
+
+
+    .txt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .txt li {
+        text-align: start;
+    }
+
+    .info button {
+        width: 25vw;
+    }
+
+    .lang-icons {
+        gap: 2vh 5vw;
+    }
+
+    h1 {
+        padding: 5vh ;
+    }
+
+    .lang_used img {
+        min-width: 40px;
+    }
+
+    .lang_used li {
+        min-width: 75px;
+    }
+
 }

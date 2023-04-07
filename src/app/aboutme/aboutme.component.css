@@ -10,3 +10,14 @@ h3 {
     font-size: 1.5rem;
     width: 70vw;
 }
+
+@media only screen and (max-width: 960px) {
+    h3 {
+        font-size: 2vh;
+        width: 85vw;
+    }
+
+    .aboutMe {
+        padding: 10vw 2vw;
+    }
+}

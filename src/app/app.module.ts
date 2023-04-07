@@ -8,6 +8,9 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { NgxTypedJsModule } from 'ngx-typed-js';
+
+
 
 @NgModule({
   declarations: [
@@ -20,7 +23,8 @@ import { ProjectsComponent } from './projects/projects.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxTypedJsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
