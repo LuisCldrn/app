@@ -1,101 +1,129 @@
 .main {
-    padding-top: 3vw;
-    background-color: rgb(44, 44, 44);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  padding-top: 3vw;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-h3, h5 {
-    color: rgb(216, 216, 216);
+h3,
+h5 {
+  color: rgb(216, 216, 216);
 }
 
 button {
-    padding: 0;
-    margin: 1vw;
-    border: solid rgb(164, 221, 172);;
-    border-radius: 3vw;
-    background-color: transparent;
+  padding: 0;
+  margin: 1vw;
+  border: solid rgb(164, 221, 172);
+  border-radius: 3vw;
+  background-color: transparent;
 }
 
 button:hover {
-    background-color: rgb(164, 221, 172);
-    transition-duration: 0.5s;
+  background-color: rgb(164, 221, 172);
+  transition-duration: 0.5s;
 }
 
 button a:hover {
-    color: white;
+  color: white;
 }
 
 button img {
-    width: 2vw;
+  width: 2vw;
 }
 
 ul {
-    display: flex;
-    flex-direction: row;
-    gap: 2vw;
-    padding: 0;
-    padding-top: 2vh;
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+  padding: 0;
+  padding-top: 2vh;
 }
 
-ul li{
-    list-style: none;
+ul li {
+  list-style: none;
 }
 
 ul img {
-    width: 3vw;
-    opacity: 0.7;
+  width: 3vw;
+  opacity: 0.7;
 }
 
 ul img:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 button a {
-    border-radius: 3vw;
-    padding: 1.5vh 2vw;
-    display: flex;
-    align-items: center;
-    gap: 2vw;
-    text-decoration: none;
-    color: rgb(164, 221, 172);
-    font-size: 1.3vw;
+  border-radius: 3vw;
+  padding: 1.5vh 2vw;
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  text-decoration: none;
+  color: rgb(164, 221, 172);
+  font-size: 1.3vw;
 }
 
 .goTop {
-    display: flex;
-    width: 90vw;
-    align-items: flex-end;
+  display: flex;
+  width: 90vw;
+  align-items: flex-end;
 }
 
 .goTop a {
-    opacity: 0.5;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    bottom: 40px;
-    right: 6vw;
-    width: 5vw;
+  opacity: 0.5;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: 40px;
+  right: 6vw;
+  width: 5vw;
+  font-size: 0.8rem;
 }
 
 .goTop img {
-    width: 6vw;
+  width: 3vw;
+  min-width: 30px;
 }
 
 .goTop img:hover {
-    cursor: pointer;
-    opacity: 0.9;
-    
+  cursor: pointer;
+  opacity: 0.9;
 }
 
 .goTop a:hover::after {
-    content: "Scroll Up";
-    color: white;
-    transition-duration: 1s;
+  content: "Scroll Up";
+  color: white;
+  transition-duration: 1s;
+}
 
-    
+@media only screen and (max-width: 960px) {
+  .main {
+    gap: 1.5vh;
+  }
+
+  button {
+    border-radius: 25px;
+  }
+
+  h3,
+  h5 {
+    text-align: center;
+  }
+
+  button a {
+    font-size: 1.2rem;
+    padding: 1.7vw 3vw;
+  }
+
+  img {
+    min-width: 35px;
+  }
+
+  button img {
+    width: 5vw;
+  }
 }
