@@ -5,14 +5,14 @@
       <div
         class="navbar__toggle"
         id="mobile-menu"
-        ngClass="{{ mobileM }}"
+        class="{{ mobileM }}"
         (click)="mobile()"
       >
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
       </div>
-      <ul class="nav" class="navbar_menu" ngClass="{{ mobileMenu }}">
+      <ul class="nav" class="navbar_menu" class="{{ mobileMenu }}">
         <li class="nav-item" class="navbar__item" (click)="mobile()">
           <a class="nav-link" (click)="ScrollService.goTo('Home')">Home</a>
         </li>

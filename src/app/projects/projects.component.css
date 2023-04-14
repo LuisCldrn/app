@@ -108,12 +108,34 @@ ul img {
 }
 
 .imgs img {
-    filter: grayscale(0.5);
+
 }
 
 .imgs img:hover {
     filter: none;
     cursor: pointer;
+}
+
+.image-wrap {
+    filter: grayscale(0.5);
+    width: 45vw;
+    height: 55vh;
+    overflow: hidden;
+    margin: 50px auto;
+}
+.image-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    transition: all 3s ease-in-out;
+}
+.image-wrap:hover img {
+    object-position: bottom center;
+}
+
+.image-wrap:hover {
+    filter: grayscale(0);
 }
 
 @media only screen and (max-width: 960px) {

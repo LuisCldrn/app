@@ -9,6 +9,8 @@ import { HomeComponent } from './home/home.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { NgxTypedJsModule } from 'ngx-typed-js';
+import { ContactMeComponent } from './contact-me/contact-me.component';
+
 
 
 
@@ -19,7 +21,8 @@ import { NgxTypedJsModule } from 'ngx-typed-js';
     FooterComponent,
     HomeComponent,
     AboutmeComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    ContactMeComponent
   ],
   imports: [
     BrowserModule,
